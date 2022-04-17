@@ -1,7 +1,7 @@
 const display = document.getElementById('clock');
 
 
-const audio = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-alarm-digital-clock-beep-989.mp3');
+const audio = new Audio('/ringtone/Alarm.mp3');
 audio.loop = true;
 
 
@@ -31,6 +31,7 @@ function updateTime() {
 
     if(alarmList.includes(now) ){
         ringing(now);
+        alert(`Its Time ${now}`)
     } 
 }
 
