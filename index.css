@@ -1,0 +1,179 @@
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  body{
+      background-color: black;
+      color: white;
+  }
+
+#main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.display-time{
+    padding-top: 20px;
+}
+
+
+#clock{
+    font-size:80px;
+    font-weight:bold;
+}
+
+.set-alarm-div{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.set-alarm-btn-div{
+    margin-left: 50px;
+}
+
+.alarm-input{
+    font-size: 40px;
+    margin-top:20px;
+    background-color: rgb(5, 5, 5);
+    color:white;
+    border: none;
+    margin:8px;
+    border-bottom: 4px rgb(114, 15, 123) solid;
+}
+
+.set-alarm-btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+li{
+    list-style-type: none; 
+}
+
+#alarm-list{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#name-list{
+    font-size:30px;
+}
+
+.time-list{
+    padding:10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#time-span{
+    font-size: 40px;
+    margin-right: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.animate-charcter{
+    position: relative;
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,#231557 0%,#44107a 29%,#ff1361 67%,#fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 40px;
+  }
+  
+  /* css for the play all button  */
+  .set-alarm {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: sans-serif;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    overflow: hidden;
+    margin-right: 40px;
+    padding-left: 26px;
+    padding-right: 26px;
+    position: relative;
+    text-align: left;
+    transition: box-shadow .15s, transform .15s;
+    font-size: 18px;
+  }
+  
+  /* focus effect */
+  .set-alarm:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  }
+  
+  /* hover effect for the paly all button  */
+  .set-alarm:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  /* color changes on action performed  */
+  .set-alarm:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  
+  
+  /* css for the follow button  */
+  .deleteAlarm {
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    width: 120px;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    white-space: nowrap;
+  }
+  
+  /* hover effect for the follow button  */
+  .deleteAlarm:hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
