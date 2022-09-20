@@ -5,27 +5,15 @@
   }
 
   body{
+      background-color: black;
       color: white;
-      font-family:sans-serif;
-  }
-
-  #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
   }
 
 #main{
     display: flex;
-    position: absolute;
+    align-items: center;
     text-align: center;
     flex-direction: column;
-    padding-right: 40px;
-    margin-top: 50px;
-    border-radius: 20px;
-    background-color: rgba(123, 15, 55, 0.5);
 }
 
 .display-time{
@@ -41,7 +29,6 @@
 .set-alarm-div{
     margin-top: 20px;
     margin-bottom: 40px;
-    text-align: center;
 }
 .set-alarm-btn-div{
     margin-left: 50px;
@@ -49,9 +36,9 @@
 
 .alarm-input{
     width: 80px;
-    font-size: 34px;
+    font-size: 35px;
     margin-top:20px;
-    background: none;
+    background-color: rgb(5, 5, 5);
     color:white;
     border: none;
     margin:8px;
@@ -124,7 +111,6 @@ li{
   
   /* css for the play all button  */
   .set-alarm {
-    width: 150px;
     align-items: center;
     appearance: none;
     background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
