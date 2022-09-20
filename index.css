@@ -68,7 +68,6 @@ li{
 }
 
 .time-list{
-    padding:10px;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -76,7 +75,7 @@ li{
 
 #time-span{
     font-size: 40px;
-    margin-right: 100px;
+    margin-right: 20px;
 }
 
 

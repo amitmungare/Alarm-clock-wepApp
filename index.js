@@ -69,7 +69,7 @@ remove = (value) => {
 function showNewAlarm(newAlarm){
     const html =`
     <li class = "time-list">        
-        <span class="time" id="time-span">${newAlarm}</span>
+        <span class="time" id="time-span">${newAlarm} </span>
         <button class="deleteAlarm time-control" id="delete-button" onclick = "remove(this.value)" value=${newAlarm}>Delete Alarm</button>       
     </li>`
     myList.innerHTML += html
