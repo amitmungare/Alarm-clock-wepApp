@@ -11,7 +11,7 @@
       color: white;
   }
 
-  /* main div of the web site  */
+  /* main div of the web site. */
 #main{
     display: flex;
     align-items: center;
