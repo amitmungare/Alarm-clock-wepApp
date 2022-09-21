@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- this is the header part  -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to index.css  -->
     <link rel="stylesheet" href="index.css">
+    <!-- title of the website  -->
     <title>Alarm Clock</title>
 </head>
-
+<!-- body begains here  -->
 <body>
-
+    <!-- this is the main div  -->
     <div id="main">
-
+        <!-- this is the clock title  -->
         <h2 class="animate-charcter">Alarm Clock</h2>
 
+        <!-- display the current time  -->
         <div class="display-time">
             <div id="clock"></div>
         </div>
     
+        <!-- form to set alarm  -->
         <div id="form-div">
             <form class="set-alarm-form">
                 <div class="set-alarm-div">
+                    <!-- input to enter hours minutes and secounds  -->
                     <input type="number" name="hour" class="alarm-input" id="hour" placeholder="HH" min="00" max="23">
                     <input type="number" name="min" class="alarm-input" id="min" placeholder="MM" min="00" max="59">
                     <input type="number" name="sec" class="alarm-input" id="sec" placeholder="SS" min="00" max="59">
                 </div>
                 <div class="set-alarm-btn-div">
+                    <!-- button to set alarm  -->
                     <button type="submit" class="set-alarm">Set Alarm</button>
-                    <button type="reset" onclick="clearAlarm()" class="clear-alarm set-alarm">Stop Alarm</button>
+                    <!-- button to delete alarm  -->
+                    <button type="reset" onclick="removeAlarm()" class="clear-alarm set-alarm">Stop Alarm</button>
                 </div>
             </form>
         </div>
     
+        <!-- display the list of set alarms  -->
         <div id="alarm-list-div">
             <ul id="alarm-list">
                 <p id="name-list">Alarm List</p>
@@ -40,9 +48,7 @@
         </div>
 
     </div>
-
-    
-
+    <!-- java script for the web site  -->
     <script src="index.js"></script>
 </body>
 
